@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Card from "./Card";
 
 const Brands = () => {
 
@@ -10,11 +11,18 @@ const Brands = () => {
             .then(data => setBrandsData(data))
     }, [])
 
-    console.log(brandsData)
 
     return (
         <div className="w-4/5 mx-auto">
-            <h2 className="text-4xl font-bold">Our Brands</h2>
+            <h2 className="text-4xl font-bold mb-8">Our Brands:</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                {
+                    brandsData.map(brand => <Card
+                        key={brand.id}
+                        brand={brand}
+                    ></Card>)
+                }
+            </div>
         </div>
     );
 };
