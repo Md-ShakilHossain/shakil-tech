@@ -1,5 +1,6 @@
-import Banner from "./Banner";
-import Brands from "./Brands";
+import Banner from "./Banner/Banner";
+import Brands from "./BrandsCard/Brands";
+import Features from "./SpecialFeatures/Features";
 
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <Brands></Brands>
+            <Features></Features>
         </div>
     );
 };
