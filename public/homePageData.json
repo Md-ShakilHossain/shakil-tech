@@ -1,0 +1,26 @@
+[
+    {
+        "photo": "https://i.ibb.co/mtyMXSr/gigabyte.jpg",
+        "brand-name": "Gigabyte"
+    },
+    {
+        "photo": "https://i.ibb.co/qx6KrdR/LG.jpg",
+        "brand-name": "LG"
+    },
+    {
+        "photo": "https://i.ibb.co/HpFNTs1/sony.jpg",
+        "brand-name": "Sony"
+    },
+    {
+        "photo": "https://i.ibb.co/MCqHm3J/walton.jpg",
+        "brand-name": "Walton"
+    },
+    {
+        "photo": "https://i.ibb.co/G0Nkb5N/Samsung.jpg",
+        "brand-name": "Samsung"
+    },
+    {
+        "photo": "https://i.ibb.co/TgVz6LB/apple.webp",
+        "brand-name": "Apple"
+    }
+]
