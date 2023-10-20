@@ -5,7 +5,7 @@ const Card = ({ brand }) => {
     const { photo, brandName } = brand;
     return (
         <div>
-            <Link to={`/brands/${brandName}`}>
+            <Link to={`/products/${brandName}`}>
                 <div className='bg-slate-200 pb-4 shadow-xl rounded-br-3xl'>
                     <img className='h-80 w-full rounded-md' src={photo} alt="" />
                     <div>
