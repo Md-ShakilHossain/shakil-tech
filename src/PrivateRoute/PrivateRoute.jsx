@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import PropTypes from 'prop-types';
 import { Navigate, useLocation } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 
@@ -18,5 +19,9 @@ const PrivateRoute = ({children}) => {
 
     return <Navigate state={location.pathname} to='/login'></Navigate>
 };
+
+PrivateRoute.propTypes = {
+    children: PropTypes.node
+}
 
 export default PrivateRoute;
