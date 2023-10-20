@@ -6,7 +6,7 @@ const ProductCard = ({product}) => {
     return (
         <div>
             <div className='bg-slate-200 p-4 shadow-xl rounded-br-3xl'>
-                    <img className='h-80 w-full rounded-md' src={imageURL} alt="" />
+                    <img className='h-72 w-full rounded-md' src={imageURL} alt="" />
                     <div className='mt-4'>
                         <p className='text-xl font-bold'>{name}</p>
                 
