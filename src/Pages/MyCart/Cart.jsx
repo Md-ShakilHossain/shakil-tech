@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, handleDelete }) => {
 
-    const { imageURL, name, brandName, rating, price, type } = cart;
+    const {_id, imageURL, name, brandName, rating, price, type } = cart;
+
 
     return (
         <div>
@@ -19,7 +20,8 @@ const Cart = ({ cart }) => {
 
                     <p><span className='font-semibold mt-2'>Rating: </span> {rating}</p>
 
-                    <button className='btn w-full mt-4 shadow-xl'>Delete</button>
+                    <button onClick={() =>handleDelete(_id)}
+                    className='btn w-full mt-4 shadow-xl'>Delete</button>
 
                 </div>
             </div>
@@ -28,7 +30,8 @@ const Cart = ({ cart }) => {
 };
 
 Cart.propTypes = {
-    cart: PropTypes.object.isRequired
+    cart: PropTypes.object.isRequired,
+    handleDelete: PropTypes.func.isRequired
 }
 
 export default Cart;
